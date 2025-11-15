@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Segmentation UI</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Segmentation front end</h1>
+<form id="uploadForm">
+<label>Model path on server (e.g. <code>yolov8s-seg.pt</code>)</label>
+<input type="text" id="model_path" name="model_path" placeholder="path/
+to/model.pt" />
+<label>Image</label>
+<input type="file" id="image" name="image" accept="image/*" required />
+<button type="submit">Run segmentation</button>
+</form>
+<div id="log"></div>
+<div id="viewer" class="viewer">
+<div id="baseContainer" class="canvasContainer"></div>
+<div id="masksContainer"></div>
+</div>
+<p class="hint">Click any pixel to select all masks that contain that
+pixel. Drag to move the selected mask(s).</p>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

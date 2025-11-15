@@ -1,0 +1,12 @@
+body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;margin:20px}
+.container{max-width:1100px;margin:0 auto}
+.viewer{position:relative;border:1px solid #ddd;margin-top:16px;min-height:
+300px}
+.canvasContainer{position:relative}
+canvas.baseImage{display:block;max-width:100%;height:auto}
+.maskCanvas{position:absolute;left:0;top:0;cursor:move}
+#log{white-space:pre-wrap;margin-top:8px;background:#f9f9f9;padding:
+8px;border-radius:6px;border:1px solid #eee}
+4
+.hint{color:#666;font-size:0.9rem}
+form label{display:block;margin-top:8px}
